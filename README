@@ -1,0 +1,15 @@
+How to run Globemail Email Visualizer:
+
+Requirements :
+	Python
+	Requests python module
+
+	1. Open email_script.py in webgl-globe/globe-search/
+	2. On lines 9 and 10, change uid2 to your email address and pwd2 to your email password.
+	3. In the terminal, navigate to the script's directory.
+	4. Run the command "python email_script.py"
+		4.1 This will go through your inbox, translating sender IPs to a JSON file of coordinates called coords.json
+	5. Step out one directory by running the command "cd .."
+	6. Run the command "python -m SimpleHTTPServer 8000"
+	7. On your Google Chrome browser, type in the URL "http://0.0.0.0:8000"
+	8. Your Globemail should be displayed.

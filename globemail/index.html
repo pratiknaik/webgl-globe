@@ -103,7 +103,7 @@
 </div>
 
 <div id="title">
-  GLOBEMAIL
+  GLOBEMAIL : Visualize your email by it's origin
 </div>
 
 <a id="ce" href="http://www.chromeexperiments.com/globe">
@@ -118,7 +118,7 @@
 
   var globe = DAT.Globe(document.getElementById('container'), function(label) {
     return new THREE.Color([
-      0x7ed3f7, 0xbe1111, 0xbe1111, 0xbe1111, 0xbe1111,
+      0x00CCFF, 0xbe1111, 0xbe1111, 0xbe1111, 0xbe1111,
       0xbe1111, 0xbe1111, 0xbe1111, 0xbe1111, 0xbe1111, 0xbe1111,
       0xbe1111, 0xbe1111, 0xbe1111,
       0xbe1111, 0xbe1111, 0xbe1111, 0xbe1111, 0xbe1111,
@@ -126,7 +126,7 @@
   });
 
   xhr = new XMLHttpRequest();
-  xhr.open('GET', '/globe-search/coords.json', true);
+  xhr.open('GET', '/globemail/coords.json', true);
   xhr.onreadystatechange = function(e) {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
